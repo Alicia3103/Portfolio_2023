@@ -1,0 +1,33 @@
+
+/*==================== ABOUT ====================*/
+.about__img{
+    width: 200px;
+    border-radius: 6px;
+    justify-self: center;
+    align-self: center;
+}
+.about__description{
+    text-align: center;
+    margin-bottom: $mb25;
+}
+.about__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: $mb25;
+}
+.about__info-title{
+    font-size: $h3FontSize;
+    font-weight: $fontSemiBold;
+    color:$titleColor;
+}
+.about__info-name{
+    font-size: $smallerFontSize;
+}
+.about__info-title, .about__info-name{
+    display: block;
+    text-align: center;
+}
+.about__buttons{
+    display: flex;
+    justify-content: center;
+}

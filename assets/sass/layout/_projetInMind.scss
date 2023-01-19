@@ -1,0 +1,29 @@
+/*==================== PROJECT IN MIND ====================*/
+.project{
+    text-align: center;
+
+    .project__bg{
+        background-color: $firstColorSecond;
+        padding-top: 36px;
+
+        .project__title{
+            font-size: $h2FontSize;
+            margin-bottom: $mb075;
+        }
+
+        .project__description{
+            margin-bottom: $mb15;
+            
+        }
+
+        .project__title,
+        .project__description{
+            color: #fff;
+        }
+
+        .project__img{
+            width: 232px;
+            justify-self: center;
+        }  
+    }
+}

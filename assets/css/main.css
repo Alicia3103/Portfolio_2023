@@ -110,6 +110,45 @@ img {
   height: auto;
 }
 
+/*==================== ABOUT ====================*/
+.about__img {
+  width: 200px;
+  border-radius: 6px;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.about__info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(250deg, 8%, 15%);
+}
+
+.about__info-name {
+  font-size: 12px;
+}
+
+.about__info-title, .about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
+
 /*==================== LAYOUT ====================*/
 .container {
   max-width: 768px;
@@ -131,13 +170,10 @@ img {
   background-color: hsl(250deg, 60%, 99%);
 }
 
-/*==================== ABOUT ====================*/
-/*==================== SKILLS ====================*/
 /*==================== QUALIFICATION ====================*/
 /*==================== SERVICES ====================*/
 /* Active Modal */
 /*==================== PORTFOLIO ====================*/
-/*==================== PROJECT IN MIND ====================*/
 /*==================== TESTIMONIAL ====================*/
 /*==================== CONTACT ME ====================*/
 /*==================== FOOTER ====================*/
@@ -192,7 +228,7 @@ z6 .home__social-icon:hover {
 }
 
 .home__subtitle {
-  font-size: 18px;
+  font-size: 20px;
   color: hsl(250deg, 8%, 45%);
   font-weight: 500;
   margin-bottom: 12px;
@@ -307,6 +343,174 @@ z6 .home__social-icon:hover {
 
 /* Active link */
 /* Change background header */
+/*==================== SKILLS ====================*/
+.skills__container {
+  row-gap: 38px;
+}
+
+.skills__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.skills__info, .skills__data, .skills__blob {
+  display: grid;
+}
+
+.skills__info {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 24px;
+}
+
+.skills__data {
+  justify-content: center;
+  text-align: center;
+}
+
+.skills__blob {
+  width: 80px;
+  height: 100px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 36px;
+  place-items: center;
+  margin-bottom: 12px;
+}
+.skills__blob img {
+  width: 40px;
+}
+
+.skills__name {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.skills__subtitle {
+  font-size: 8px;
+  color: hsl(250deg, 8%, 65%);
+}
+
+/*Animation skills*/
+.skills__blob:hover img {
+  animation: bounce-skills 0.6s;
+}
+
+@keyframes bounce-skills {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translate(0);
+  }
+  60% {
+    transform: translateY(-3px);
+  }
+  80% {
+    transform: translate(0);
+  }
+}
+/*==================== QUALIFICATION ====================*/
+.qualification__tabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 32px;
+}
+
+.qualification__button {
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.qualification__button:hover {
+  color: hsl(250deg, 69%, 61%);
+}
+
+.qualification__icon {
+  font-size: 22px;
+  margin-right: 4px;
+}
+
+.qualification__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 18px;
+}
+
+.qualification__title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.qualification__subtitle {
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.qualification__calendar {
+  font-size: 12px;
+  color: hsl(250deg, 8%, 65%);
+}
+
+.qualification__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: hsl(250deg, 69%, 61%);
+  border-radius: 50%;
+}
+
+.qualification__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: hsl(250deg, 69%, 61%);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualification__active[data-content] {
+  display: block;
+}
+
+.qualification__button.qualification__active {
+  color: hsl(250deg, 69%, 61%);
+}
+
+/*==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
+.project .project__bg {
+  background-color: hsl(250deg, 69%, 61%);
+  padding-top: 36px;
+}
+.project .project__bg .project__title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.project .project__bg .project__description {
+  margin-bottom: 24px;
+}
+.project .project__bg .project__title,
+.project .project__bg .project__description {
+  color: #fff;
+}
+.project .project__bg .project__img {
+  width: 232px;
+  justify-self: center;
+}
+
 /*==================== BUTTONS ====================*/
 .button {
   display: inline-block;
@@ -329,6 +533,14 @@ z6 .home__social-icon:hover {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+.button--white {
+  background-color: #fff;
+  color: hsl(250deg, 69%, 61%);
+}
+.button--white:hover {
+  background-color: #fff;
 }
 
 .section {

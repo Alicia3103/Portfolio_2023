@@ -20,4 +20,12 @@
     display:inline-flex;
     align-items: center;
 }
+.button--white{
+    background-color: #fff;
+    color: $firstColor;
+    &:hover{
+        background-color: #fff;
+    }
+}
+
 
