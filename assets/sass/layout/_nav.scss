@@ -1,0 +1,74 @@
+/*==================== NAV ====================*/
+.nav{
+    max-width: 968px;
+    height:$headerHeight;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo,.nav__toggle{
+    color: $titleColor;
+    font-weight:$fontMedium ;
+}
+.nav__logo:hover,.nav__toggle:hover{
+    color:$firstColor
+}
+.nav__toggle{
+    font-size: 13px;
+    cursor: pointer;
+}
+@media screen and (max-width:767px) {
+    .nav__menu{
+    position:fixed;  
+    bottom: -100%;
+    left:0 ;
+    width: 100%;
+    background-color: $bodyColor;
+    padding:24px 18px 48px;
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+    border-radius: 18px 18px 0 0;
+    transition: .3s;
+    }
+  
+}
+
+.nav__list{
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $smallFontSize;
+    color: $titleColor;
+    font-weight: $fontMedium;
+}
+
+.nav__link:hover{
+    color:$firstColor;
+}
+.nav__icon{
+    font-size: 14px;
+}
+
+.nav__close{
+    position: absolute;
+    right:15px;
+    bottom:6px;
+    font-size: 18px;
+    cursor: pointer ;
+    color:$firstColor
+}
+.nav__close:hover{
+ color:$firstColorAlt;
+}
+/* show menu */
+.show-menu{
+    bottom:0;
+}
+
+/* Active link */
+
+
+/* Change background header */

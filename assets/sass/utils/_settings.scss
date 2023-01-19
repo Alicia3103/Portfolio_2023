@@ -1,0 +1,68 @@
+
+
+ $headerHeight: 3rem;
+ 
+ /*========== Font and typography ==========*/
+ $bodyFont: 'Poppins', sans-serif;
+
+  /*========== Colors ==========*/
+    /* Change favorite color */
+   $hueColor: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+    /* HSL color mode */
+    $firstColor: hsl($hueColor, 69%, 61%);
+    $firstColorSecond: hsl($hueColor, 69%, 61%);
+    $firstColorAlt: hsl($hueColor, 57%, 53%);
+    $firstColorLighter: hsl($hueColor, 92%, 85%);
+    $titleColor: hsl($hueColor, 8%, 15%);
+    $textColor: hsl($hueColor, 8%, 45%);
+    $textColorLight: hsl($hueColor, 8%, 65%);
+    $inputColor: hsl($hueColor, 70%, 96%);
+    $bodyColor: hsl($hueColor, 60%, 99%);
+    $containerColor: #fff;
+    $scrollBarColor: hsl($hueColor, 12%, 90%);
+    $scrollThumbColor: hsl($hueColor, 12%, 80%);
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+$bigFontSize: 32px;
+$h1FontSize: 24px;
+$h2FontSize: 18px;
+$h3FontSize: 20px;
+$normalFontSize: 15px;
+$smallFontSize: 13px;
+$smallerFontSize: 12px;
+
+/*========== Font weight ==========*/
+$fontMedium: 500;
+$fontSemiBold: 600;
+
+/*========== Margenes Bottom ==========*/
+
+$mb025: 4px;
+$mb05: 8px;
+$mb075: 12px;
+$mb1: 16px;
+$mb15: 24px;
+$mb2: 32px;
+$mb25: 40px;
+$mb3: 48px;
+
+/*========== z index ==========*/
+$zTooltip: 10;
+$zFixed: 100;
+$zModal: 1000;
+
+/* Font size for large devices */
+/*@media screen and (min-width: 968px) {
+    :root {
+        $bigFontSize: 48px;
+        $h1FontSize: 27px;
+        $h2FontSize: 24px;
+        $h3FontSize: 15px;
+        $normalFontSize: 12px;
+        $smallFontSize: 11px;
+        $smallerFontSize: 10px;
+    
+}
+}
+*/

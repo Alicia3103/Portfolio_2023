@@ -1,0 +1,16 @@
+@import "../sass/utils/settings";
+
+
+@import "../sass/base/reset";
+@import "../sass/base/base";
+
+@import"../sass/layout/about";
+@import"../sass/layout/layout";
+@import"../sass/layout/home";
+@import"../sass/layout/nav";
+
+@import "../sass/components/button";
+@import "../sass/components/components";
+@import "../sass/components/scrollbar";
+
+@import "../sass/base/media";

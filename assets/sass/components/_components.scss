@@ -1,0 +1,20 @@
+.section {
+    padding: 24px 0 48px;
+  }
+  
+  .section__title {
+    font-size: $h1FontSize;
+    color: $titleColor;
+  }
+  
+  .section__subtitle {
+    display: block;
+    font-size: $smallFontSize;
+    margin-bottom: $mb3;
+  }
+  
+  .section__title, 
+  .section__subtitle {
+    text-align: center;
+  }
+

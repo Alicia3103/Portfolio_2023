@@ -1,0 +1,23 @@
+
+/*==================== BUTTONS ====================*/
+.button{
+    display: inline-block;
+    background-color: $firstColor;
+    color:#ffffff;
+    padding:12px;
+    border-radius: 6px;
+    font-weight: $fontMedium;
+    &:hover{
+        background-color: $firstColorAlt;
+    }
+}
+.button__icon{
+    font-size: 15px;
+    margin-left: $mb05;
+    transition:.3s;
+}
+.button--flex{
+    display:inline-flex;
+    align-items: center;
+}
+
