@@ -70,5 +70,35 @@
 
 /* Active link */
 
+.active-link{
+    color: $firstColor;
+}
+  /*change background header*/
+  .scroll-header{
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15) ;
+  }
 
-/* Change background header */
+  /*=================SCROLL UP========*/
+  .scrollup{
+    position: fixed;
+    right: 12px;
+    bottom: -20%;
+    background-color: $firstColor;
+    opacity: 0.8;
+    padding:  5px;
+    border-radius: 3px;
+    z-index: $zTooltip;
+    transition: .4s;
+    &:hover{
+        background-color: $firstColorAlt;
+    }
+    .scrollup__icon{
+      color: #fff;  
+      font-size: 22px;
+      
+    }
+  }
+/*------------------------scroll show-------------------*/
+.show-scroll{
+    bottom: 60px;
+}

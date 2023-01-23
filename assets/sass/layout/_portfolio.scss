@@ -1,0 +1,30 @@
+/*==================== PORTFOLIO ====================*/
+.portfolio__content{
+    background-color: $bodyColor;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(174,190,205,.3);
+    .portfolio__img{
+        width: 100%;
+        transition:.4s
+    }
+    &:hover{
+        box-shadow: 0 6px 8px rgba(174,190,205,.4);
+        .portfolio__img{
+            transform: scale(1.02);
+        }
+    }
+
+}
+.portfolio__data{
+        padding:18px;
+        .portfolio__subtitle{
+            font-size:$smallFontSize;
+            color: $firstColorLighter;
+        }
+        .portfolio__title{
+            font-size: $h3FontSize;
+            color: $firstColor;
+            margin: $mb2 0;
+        }
+    }

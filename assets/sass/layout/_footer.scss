@@ -1,0 +1,47 @@
+/*==================== FOOTER ====================*/
+.footer{
+    padding-top:24px;
+}
+.footer__container{
+    row-gap: 42px;
+}
+
+.footer__bg{
+    background-color :$firstColor;
+    padding: 24px 0 36px;
+}
+.footer__title{
+    font-size: $h1FontSize;
+    margin-bottom: $mb025;
+
+}
+.footer__subtitle{
+    font-size: $smallFontSize;
+}
+.footer__links{
+   display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.footer__link:hover{
+    color: $firstColorLighter;
+}
+.footer__social{
+    font-size: 20px;
+    margin-right: $mb15;
+    &:hover{
+        color: $firstColorLighter;
+    }
+}
+.footer__copy{
+    font-size: $smallerFontSize;
+    text-align: center;
+    color: $textColorLight;
+    margin-top: $mb3;
+}
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social{
+    color: #fff;
+}

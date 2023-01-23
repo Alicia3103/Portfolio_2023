@@ -1,0 +1,50 @@
+
+/*==================== CONTACT ME ====================*/
+.contact__container{
+    row-gap: 36px;
+}
+.contact__information{
+    display: flex;
+    margin-bottom: $mb2;
+}
+.contact__icon{
+    font-size: 24px;
+    color:$firstColor;
+    margin-right: $mb075;
+}
+.contact__title{
+    font-size: $h3FontSize;
+    font-weight: $fontMedium;
+}
+.contact__subtitle{
+    font-size: $smallFontSize;
+    color: $textColorLight;
+    a{
+        font-size: $smallFontSize;
+        color: $textColorLight;
+    }
+}
+.contact__content{
+    background-color: $inputColor;
+    border-radius: 6px;
+    padding: 9px 12px 3px;
+}
+.contact__label{
+    font-size: $smallerFontSize;
+    color: $titleColor;
+    line-height: 15px;
+}
+.contact__input{
+    width: 100%;
+    background-color: $inputColor;
+    color: $textColor;
+    font-family: $bodyFont;
+    font-size: $normalFontSize;
+    border:none;
+    outline: none;
+    padding: 3px 6px 6px 0;
+}
+.button--submit{
+    border:none;
+    outline: none;
+}

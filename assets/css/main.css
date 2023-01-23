@@ -175,7 +175,6 @@ img {
 /* Active Modal */
 /*==================== PORTFOLIO ====================*/
 /*==================== TESTIMONIAL ====================*/
-/*==================== CONTACT ME ====================*/
 /*==================== FOOTER ====================*/
 /*==================== HOME ====================*/
 .home__container {
@@ -342,7 +341,40 @@ z6 .home__social-icon:hover {
 }
 
 /* Active link */
-/* Change background header */
+.active-link {
+  color: hsl(250deg, 69%, 61%);
+}
+
+/*change background header*/
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*=================SCROLL UP========*/
+.scrollup {
+  position: fixed;
+  right: 12px;
+  bottom: -20%;
+  background-color: hsl(250deg, 69%, 61%);
+  opacity: 0.8;
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 10;
+  transition: 0.4s;
+}
+.scrollup:hover {
+  background-color: hsl(250deg, 57%, 53%);
+}
+.scrollup .scrollup__icon {
+  color: #fff;
+  font-size: 22px;
+}
+
+/*------------------------scroll show-------------------*/
+.show-scroll {
+  bottom: 60px;
+}
+
 /*==================== SKILLS ====================*/
 .skills__container {
   row-gap: 38px;
@@ -509,6 +541,150 @@ z6 .home__social-icon:hover {
 .project .project__bg .project__img {
   width: 232px;
   justify-self: center;
+}
+
+/*==================== PORTFOLIO ====================*/
+.portfolio__content {
+  background-color: hsl(250deg, 60%, 99%);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+}
+.portfolio__content .portfolio__img {
+  width: 100%;
+  transition: 0.4s;
+}
+.portfolio__content:hover {
+  box-shadow: 0 6px 8px rgba(174, 190, 205, 0.4);
+}
+.portfolio__content:hover .portfolio__img {
+  transform: scale(1.02);
+}
+
+.portfolio__data {
+  padding: 18px;
+}
+.portfolio__data .portfolio__subtitle {
+  font-size: 13px;
+  color: hsl(250deg, 92%, 85%);
+}
+.portfolio__data .portfolio__title {
+  font-size: 18px;
+  color: hsl(250deg, 69%, 61%);
+  margin: 32px 0;
+}
+
+/*==================== CONTACT ME ====================*/
+.contact__container {
+  row-gap: 36px;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.contact__icon {
+  font-size: 24px;
+  color: hsl(250deg, 69%, 61%);
+  margin-right: 12px;
+}
+
+.contact__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact__subtitle {
+  font-size: 13px;
+  color: hsl(250deg, 8%, 65%);
+}
+.contact__subtitle a {
+  font-size: 13px;
+  color: hsl(250deg, 8%, 65%);
+}
+
+.contact__content {
+  background-color: hsl(250deg, 70%, 96%);
+  border-radius: 6px;
+  padding: 9px 12px 3px;
+}
+
+.contact__label {
+  font-size: 12px;
+  color: hsl(250deg, 8%, 15%);
+  line-height: 15px;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: hsl(250deg, 70%, 96%);
+  color: hsl(250deg, 8%, 45%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 3px 6px 6px 0;
+}
+
+.button--submit {
+  border: none;
+  outline: none;
+}
+
+/*==================== FOOTER ====================*/
+.footer {
+  padding-top: 24px;
+}
+
+.footer__container {
+  row-gap: 42px;
+}
+
+.footer__bg {
+  background-color: hsl(250deg, 69%, 61%);
+  padding: 24px 0 36px;
+}
+
+.footer__title {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.footer__subtitle {
+  font-size: 13px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.footer__link:hover {
+  color: hsl(250deg, 92%, 85%);
+}
+
+.footer__social {
+  font-size: 20px;
+  margin-right: 24px;
+}
+.footer__social:hover {
+  color: hsl(250deg, 92%, 85%);
+}
+
+.footer__copy {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(250deg, 8%, 65%);
+  margin-top: 48px;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__link,
+.footer__social {
+  color: #fff;
 }
 
 /*==================== BUTTONS ====================*/
