@@ -4,6 +4,7 @@
     border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(174,190,205,.3);
+    position: relative;
     .portfolio__img{
         width: 100%;
         transition:.4s
@@ -18,6 +19,7 @@
 }
 .portfolio__data{
         padding:18px;
+        
         .portfolio__subtitle{
             font-size:$smallFontSize;
             color: $firstColorLighter;
@@ -27,4 +29,13 @@
             color: $firstColor;
             margin: $mb2 0;
         }
+       .portfolio__data-description{
+        line-height: 20px;
+        padding-bottom: 60px;
+    } 
+    .button{
+        position:absolute;
+        bottom: 20px;
     }
+    }
+    

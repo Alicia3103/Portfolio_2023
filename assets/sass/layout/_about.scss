@@ -11,14 +11,18 @@
     margin-bottom: $mb25;
 }
 .about__info{
+   
+    
+}
+.about__softskills{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: $mb25;
 }
 .about__info-title{
-    font-size: $h3FontSize;
-    font-weight: $fontSemiBold;
     color:$titleColor;
+    font-weight: $fontSemiBold;
+   
 }
 .about__info-name{
     font-size: $smallerFontSize;

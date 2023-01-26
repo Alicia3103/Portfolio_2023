@@ -123,16 +123,15 @@ img {
   margin-bottom: 40px;
 }
 
-.about__info {
+.about__softskills {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 40px;
 }
 
 .about__info-title {
-  font-size: 18px;
-  font-weight: 600;
   color: hsl(324deg, 8%, 15%);
+  font-weight: 600;
 }
 
 .about__info-name {
@@ -586,6 +585,7 @@ img {
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(174, 190, 205, 0.3);
+  position: relative;
 }
 .portfolio__content .portfolio__img {
   width: 100%;
@@ -609,6 +609,14 @@ img {
   font-size: 18px;
   color: hsl(324deg, 90%, 19%);
   margin: 32px 0;
+}
+.portfolio__data .portfolio__data-description {
+  line-height: 20px;
+  padding-bottom: 60px;
+}
+.portfolio__data .button {
+  position: absolute;
+  bottom: 20px;
 }
 
 /*==================== CONTACT ME ====================*/
@@ -697,10 +705,16 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 18px;
+  white-space: nowrap;
 }
 
 .footer__link:hover {
   color: hsl(324deg, 92%, 85%);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
 }
 
 .footer__social {

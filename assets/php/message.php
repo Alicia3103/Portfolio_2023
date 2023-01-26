@@ -12,7 +12,7 @@ function validCaptcha(){
 
     if(isset($_POST["recaptchaResponse"]) && !empty($_POST["recaptchaResponse"])){
         $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify'; // URL to the reCAPTCHA server
-            $recaptcha_secret = '6LeJxdMjAAAAAP0inkA8CS7FjeqJHzr020cWs67a'; // Secret key (here demo)
+            $recaptcha_secret = 'secret'; // Secret key (here demo)
             $recaptcha_response=$_POST["recaptchaResponse"];
             $recaptcha = file_get_contents($recaptcha_url.'?secret='.$recaptcha_secret.'&response='.$recaptcha_response); // Send request to the server
             $recaptcha = json_decode($recaptcha); // Decode the JSON response
