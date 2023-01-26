@@ -1,8 +1,227 @@
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width:350px){
+  .container{
+    margin-left: $mb1;
+    margin-right: $mb1;
+  }  
+  .nav__menu{
+    padding: 24px 3px 48px;
 
+  }
+  .nav__list{
+    column-gap: 0;
+  }
+ 
+  .home__content{
+    grid-template-columns: 0.25fr 3fr;
+  }
+ 
+  .home__img{
+    width: 180px;
+  }
+  .skills__title{
+    font-size: $normalFontSize;
+  }
+  .qualification__data{
+    gap: 6px;
+  }
+  .project__img{
+    width: 200px;
+  }
+
+}
 
 /* For medium devices */
+@media screen and (min-width:568px){
+    .home__content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
+    .home__data{
+        grid-column: initial;
+    }
+    .home__img{
+        order:1;
+        justify-self: center;
+    }
+    .services__container{
+        width: 80%;
+    }
+    .about__container,
+    .skills__container,
+    .portfolio__container,
+    .project__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);     
+    }
+    .qualification__sections{
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
 
+@media screen and (min-width:768px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body{
+        margin: 0;
+    }
+    .section{
+        padding: 72px 16px 24px;
+    }
+    .section__subtitle{
+        margin-bottom: 48px;
+    }
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+    .nav{
+        padding: 0 16px;
+    }
+  
+    .portfolio__container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        max-width: 100%;
+    }
+    .services__container{
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+    .nav{
+      height: calc($headerHeight + 1.5rem);  
+      column-gap: 16px;
+
+    }
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+        display: none;
+    }
+    .nav__list{
+        display: flex;
+        column-gap: 32px;
+    }
+    .nav__menu{
+        margin-left: auto;
+    }
+    .home__container{
+        row-gap: 5rem;
+    }
+    .home__content{
+        padding-top: 5.5rem;
+        column-gap: 32px;
+    }
+    .home__img{
+        width: 270px;
+    }
+    .home__scroll{
+        display: block;
+    }
+    .home__scroll-button{
+        margin-left: 48px;
+    }
+    .about__container{
+        column-gap: 5rem;
+    }
+    .about__img{
+        width: 350px;
+    }
+    .about__description{
+        text-align: initial;
+    }
+    .about__info{
+        justify-content: space-between;
+    }
+    .about_buttons{
+        justify-content: initial;
+    }
+    .qualification__tabs{
+        justify-content: center;
+
+    }
+    .qualification__button{
+        margin: 0 $mb1;
+    }
+    .qualification__sections{
+        grid-template-columns: .5fr;
+    }
+
+    .project{
+        text-align: initial;
+    }
+    .project__bg{
+        background: none;
+    }
+    .project__container{
+      
+        padding: 3rem 2.5rem 0;
+        grid-template-columns: 1fr max-content ;
+        column-gap: 3rem;
+    }
+    .project__data{
+        padding-top: .8rem;
+    }
+    .footer__container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer__bg{
+        padding: 3rem 0 3.5rem;
+    }
+    .footer__links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+    .footer__socials{
+        justify-self:flex-end;
+    }
+    .footer__copy{
+        margin-top: 4.5rem;
+    }
+}
 
 /* For large devices */
+@media screen and (min-width:1024px){
+    .header,
+    .main,
+    .footer__container{
+        padding: 0;
+    }
+    .portfolio__container,
+    .services__container{
+        grid-template-columns: repeat(3, 1fr);
+        width: 90%;
+        max-width: 1200px;
+    }
+    .skills__container{
+        gap: 5%;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .section{
+        padding: 112px 0 64px;
+    }
+    .home__img{
+        width: 350px;
+    }
+    .home__social{
+        transform: translateX(-6rem);
+        i{
+            font-size: 26px;
+        }
+        .malt__icon {
+            width: 25px;}
+    }
+    .contact__form{
+        width: 460px;
+    }
+    .contact__inputs{
+       grid-template-columns: repeat(2, 1fr); 
+    }
+
+}

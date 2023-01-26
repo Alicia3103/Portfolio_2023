@@ -45,12 +45,31 @@ tabs.forEach((tab) => {
 		tab.classList.add('qualification__active');
 	})
 })
-
 /*==================== SERVICES MODAL ====================*/
 
+const modalBtns=document.querySelectorAll('.services__button');
 
-/*==================== TESTIMONIAL ====================*/
+	modalBtns.forEach((modalBtn,i) =>
+	modalBtn.addEventListener('click', (e) => {
+		const buttonId= e.currentTarget.getAttribute('id')
+		const modal=document.querySelector('.'+buttonId)
+		modal.classList.add('active-modal');
+		
+		const modalClose= modal.querySelector('.services__modal-close')
+		modalClose.addEventListener('click', (e) => {
+			modal.classList.remove('active-modal');
+		})
+		
+		const modalActive=document.querySelector('.active-modal')
 
+		document.addEventListener('keyup',(e)=>{
+			if (modalActive && e.key === 'Escape') {
+				modal.classList.remove('active-modal');
+			}
+
+		})
+	})
+)
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');
 
@@ -59,7 +78,7 @@ function scrollActive() {
 
 	sections.forEach((section) => {
 		const sectionHeight = section.offsetHeight,
-			sectionTop = section.offsetTop - 50,
+			sectionTop = section.offsetTop - 100,
 			sectionId = section.getAttribute('id'),
 			sectionsClass = document.querySelector(
 				'.nav__menu a[href*=' + sectionId + ']'
@@ -102,4 +121,57 @@ window.addEventListener('scroll', scrollHeader)
     }
     window.addEventListener('scroll', scrollTop)
 
-/*==================== DARK LIGHT THEME ====================*/
+/*==================== Send message ====================*/
+//select the form
+const form = document.querySelector('form')
+//select the form error container to display the message
+const statusTxt= form.querySelector('.form-erreur')
+
+
+form.onsubmit= (e)=>{
+    e.preventDefault()
+    //execute the google recaptcha with site key (here demo)a
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LeJxdMjAAAAAFboYB3Clr3E34JseM2ZAwvYFfKL', {action: 'contact'}).then(function(token) {
+            console.log('hello')
+            console.log(token)
+            let recaptchaResponse = document.getElementById("recaptchaResponse")
+            recaptchaResponse.value = token // Set the recaptcha response
+			
+    //display the error message block and message
+    statusTxt.style.display ="block"
+    statusTxt.innerText="Envoi du message ..."
+console.log('ici')	
+// creating new xml object
+let xhr = new XMLHttpRequest()
+
+// sending post request to message.php
+xhr.open("POST","assets/php/message.php",true)
+//once ajax loaded
+xhr.onload =()=>{
+    // if ajxa ok (status 200 ok and readystate 4)
+    if(xhr.readyState ==4 && xhr.status == 200){
+        
+        //storing ajax response
+        let response = xhr.response
+        //display the response from the message.php file
+        statusTxt.innerText=response
+
+        //change the color of the error message in red if error
+        if(response.indexOf('Veuillez rentrer votre numéro sous la forme 0123456789')!= -1 ||response.indexOf('veuillez remplir un email valide')!= -1 ||response.indexOf('Vous devez remplir les champs *') !=-1||response.indexOf("Désolé l'email n'a pas pu être envoyé. Veuillez réessayer plus tard") !=-1 ){
+            statusTxt.style.color='red'
+        //change the color of the error message in blue if no error
+        }else if(response.indexOf("L'email a bien été envoyé.")!= -1){
+            statusTxt.style.color='Blue'
+            form.reset()
+           
+        }
+        
+    }
+}
+
+let formData = new FormData(form)
+xhr.send(formData)
+    });
+      });
+    }

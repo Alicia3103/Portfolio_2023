@@ -1,5 +1,11 @@
 
 /*==================== SKILLS ====================*/
+.skills{
+    background-color: $secondColor;
+    .section__subtitle{
+        color:$subtitleColor
+    }
+    }
 .skills__container{
     row-gap: 38px;
 }
@@ -11,6 +17,11 @@
     font-size:$smallFontSize ;
     font-weight: $fontSemiBold;
     margin-bottom: 30px;
+}
+.skills__content{
+    background-color:$bodyColor;
+    padding: 10px;
+    border-radius: 15px;
 }
 .skills__info, .skills__data, .skills__blob{
     display:grid;
@@ -26,10 +37,11 @@
 .skills__blob{
     width: 80px;
     height: 100px;
-    background-color: rgb(233, 233, 233);
+    background-color: white;
     border-radius: 36px;
     place-items: center;
     margin-bottom: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.15);
     img{
         width: 40px;
     }
@@ -37,10 +49,11 @@
 .skills__name{
     font-size: $smallFontSize;
     margin-bottom: 3px;
+    
 }
 .skills__subtitle{
-    font-size: $tinyFontSize;
-    color: $textColorLight;
+    font-size: 10px;
+    //color: $textColorLight;
 }
 /*Animation skills*/
 .skills__blob:hover img{

@@ -7,18 +7,21 @@
 
   /*========== Colors ==========*/
     /* Change favorite color */
-   $hueColor: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+   $hueColor: 324; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    $firstColor: hsl($hueColor, 69%, 61%);
-    $firstColorSecond: hsl($hueColor, 69%, 61%);
-    $firstColorAlt: hsl($hueColor, 57%, 53%);
+    $firstColor: hsl($hueColor, 90%, 19%);
+    $firstColorSecond: hsl($hueColor, 92%, 85%);
+    $firstColorAlt: hsl($hueColor, 90%, 25%);
     $firstColorLighter: hsl($hueColor, 92%, 85%);
+    $firstColorDarker: hsl($hueColor, 90%, 14%);
+    $secondColor: hsl($hueColor, 12%, 46%);
     $titleColor: hsl($hueColor, 8%, 15%);
+    $subtitleColor: hsl($hueColor, 8%, 15%);
     $textColor: hsl($hueColor, 8%, 45%);
     $textColorLight: hsl($hueColor, 8%, 65%);
     $inputColor: hsl($hueColor, 70%, 96%);
-    $bodyColor: hsl($hueColor, 60%, 99%);
+    $bodyColor: hsl($hueColor, 96%, 98%);
     $containerColor: #fff;
     $scrollBarColor: hsl($hueColor, 12%, 90%);
     $scrollThumbColor: hsl($hueColor, 12%, 80%);
@@ -47,6 +50,7 @@ $mb15: 24px;
 $mb2: 32px;
 $mb25: 40px;
 $mb3: 48px;
+$mb4:64px;
 
 /*========== z index ==========*/
 $zTooltip: 10;

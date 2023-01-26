@@ -5,13 +5,14 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 .nav__logo,.nav__toggle{
     color: $titleColor;
     font-weight:$fontMedium ;
 }
 .nav__logo:hover,.nav__toggle:hover{
-    color:$firstColor
+    color:$firstColorAlt
 }
 .nav__toggle{
     font-size: 13px;
@@ -42,11 +43,11 @@
     align-items: center;
     font-size: $smallFontSize;
     color: $titleColor;
-    font-weight: $fontMedium;
+    font-weight: bold;
 }
 
 .nav__link:hover{
-    color:$firstColor;
+    color:$firstColorAlt;
 }
 .nav__icon{
     font-size: 14px;

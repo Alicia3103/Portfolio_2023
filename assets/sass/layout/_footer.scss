@@ -7,7 +7,7 @@
 }
 
 .footer__bg{
-    background-color :$firstColor;
+    background-color :$secondColor;
     padding: 24px 0 36px;
 }
 .footer__title{
@@ -24,24 +24,24 @@
     row-gap: 18px;
 }
 .footer__link:hover{
-    color: $firstColorLighter;
+    color: $firstColorSecond;
 }
 .footer__social{
     font-size: 20px;
     margin-right: $mb15;
     &:hover{
-        color: $firstColorLighter;
+        color: $firstColorSecond;
     }
 }
 .footer__copy{
     font-size: $smallerFontSize;
     text-align: center;
-    color: $textColorLight;
+    color: #fff;
     margin-top: $mb3;
 }
 .footer__title,
 .footer__subtitle,
 .footer__link,
 .footer__social{
-    color: #fff;
+    color:$firstColor;
 }

@@ -1,0 +1,87 @@
+/*==================== SERVICES ====================*/
+.services{
+    
+    background-color: $secondColor;
+        
+}
+.services__container{
+  margin-left: auto;
+    margin-right: auto;  
+}
+.services__data{
+    
+   padding: 3rem 1rem; 
+   background-color: #fff;
+   border-radius: 8px;
+   text-align: center;
+   transition: .4s;
+   box-shadow: 0 4px 6px rgba(0,0,0,.15);
+   &:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 6px 8px rgba(0,0,0,.4);
+   }
+}
+.services__icon,
+.services__title{
+    margin-bottom: $mb2;
+    color: $firstColor;
+}
+.services__icon{
+    font-size: 3rem;
+}
+.services__title{
+    font-size: $h3FontSize;
+}
+.services__description{
+margin-bottom: $mb4;
+}
+.services__modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    z-index:$zModal ;
+    opacity:0;
+    visibility: hidden;
+}
+.services__modal-content{
+    position: relative;
+    background-color: $bodyColor;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.services__modal-service{
+    display: flex;
+}
+.services__modal-title{
+    font-size: $h3FontSize;
+    font-weight: $fontMedium;
+    margin-bottom: $mb15;
+}
+.services__modal-close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    color: $firstColor;
+    cursor: pointer;
+}
+.services__button{
+    cursor: pointer;
+}
+.service__modal-icon{
+    color: $firstColor;
+    margin-right: $mb025;
+}
+
+/* Active Modal */
+.active-modal{
+    opacity: 1;
+    visibility: visible;
+}

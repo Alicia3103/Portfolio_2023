@@ -1,9 +1,9 @@
 /*==================== PROJECT IN MIND ====================*/
 .project{
     text-align: center;
-
+background-color: $secondColor;
     .project__bg{
-        background-color: $firstColorSecond;
+        
         padding-top: 36px;
 
         .project__title{
@@ -24,6 +24,8 @@
         .project__img{
             width: 232px;
             justify-self: center;
+            border-radius: 6px;
+            box-shadow:10px 10px 10px 0px rgba(0,0,0,0.18) ;
         }  
     }
 }
