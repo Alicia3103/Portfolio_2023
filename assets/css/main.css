@@ -121,6 +121,7 @@ img {
 .about__description {
   text-align: center;
   margin-bottom: 40px;
+  line-height: 20px;
 }
 
 .about__softskills {
@@ -256,6 +257,7 @@ img {
 .home__description {
   color: hsl(324deg, 8%, 15%);
   margin-bottom: 32px;
+  line-height: 22px;
 }
 
 .home__scroll {
@@ -420,7 +422,7 @@ img {
 
 .skills__content {
   background-color: hsl(324deg, 96%, 98%);
-  padding: 10px;
+  padding: 25px 0;
   border-radius: 15px;
 }
 
@@ -430,7 +432,7 @@ img {
 
 .skills__info {
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px 24px;
+  gap: 20px 15px;
 }
 
 .skills__data {
@@ -724,6 +726,9 @@ img {
 .footer__social:hover {
   color: hsl(324deg, 92%, 85%);
 }
+.footer__social:hover .malt-color {
+  fill: hsl(324deg, 92%, 85%);
+}
 
 .footer__copy {
   font-size: 12px;
@@ -876,6 +881,7 @@ img {
 .section__title {
   font-size: 24px;
   color: hsl(324deg, 8%, 15%);
+  margin-bottom: 8px;
 }
 
 .section__subtitle {
@@ -934,7 +940,6 @@ img {
     width: 80%;
   }
   .about__container,
-.skills__container,
 .portfolio__container,
 .project__container,
 .contact__container,
@@ -976,6 +981,9 @@ img {
   .services__container {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
+  }
+  .skills__container {
+    grid-template-columns: repeat(2, 1fr);
   }
   .nav {
     height: 4.5rem;
@@ -1070,6 +1078,9 @@ img {
 .main,
 .footer__container {
     padding: 0;
+  }
+  .nav__link {
+    font-size: 15px;
   }
   .portfolio__container,
 .services__container {

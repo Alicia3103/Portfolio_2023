@@ -26,6 +26,7 @@
 }
 .footer__link:hover{
     color: $firstColorSecond;
+    
 }
 .footer__socials{
     display: flex;
@@ -36,6 +37,9 @@
     margin-right: $mb15;
     &:hover{
         color: $firstColorSecond;
+        .malt-color {
+			fill: $firstColorSecond;
+		}
     }
 }
 .footer__copy{

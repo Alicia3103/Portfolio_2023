@@ -48,7 +48,7 @@
         width: 80%;
     }
     .about__container,
-    .skills__container,
+    
     .portfolio__container,
     .project__container,
     .contact__container,
@@ -92,6 +92,9 @@
     .services__container{
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
+    }
+    .skills__container{
+        grid-template-columns: repeat(2, 1fr);     
     }
     .nav{
       height: calc($headerHeight + 1.5rem);  
@@ -191,6 +194,9 @@
     .main,
     .footer__container{
         padding: 0;
+    }
+    .nav__link{
+        font-size: 15px;
     }
     .portfolio__container,
     .services__container{
